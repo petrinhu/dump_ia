@@ -19,7 +19,7 @@ o processo para que sua contribuição seja aceita de forma rápida e segura.
 | Ferramenta   | Versão mínima | Como instalar |
 |--------------|---------------|---------------|
 | bash         | 4.4           | Padrão na maioria das distros |
-| shellcheck   | qualquer      | `apt install shellcheck` / `brew install shellcheck` |
+| shellcheck   | qualquer      | `apt install shellcheck` / `dnf install ShellCheck`  |
 | bats-core    | 1.2+          | Veja abaixo |
 
 ### Instalando bats-core
@@ -30,9 +30,6 @@ sudo apt install bats
 
 # Fedora / RHEL
 sudo dnf install bats
-
-# macOS
-brew install bats-core
 
 # Manual (qualquer sistema)
 git clone https://github.com/bats-core/bats-core.git
@@ -121,7 +118,7 @@ Use o formato [Conventional Commits](https://www.conventionalcommits.org/pt-br/)
 
 ```
 feat(detecção): adicionar suporte a projetos Elixir/Mix
-fix(encoding): corrigir conversão de arquivos CP1252 no macOS
+fix(encoding): corrigir conversão de arquivos CP1252 em sistemas Linux
 docs(readme): atualizar exemplos de uso com --verbose
 test(hash): adicionar teste para verificação com sha512
 ```

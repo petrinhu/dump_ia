@@ -131,7 +131,7 @@ Todo código novo deve ter cobertura em `tests/run_tests.bats`. Para rodar:
 # Instalar bats-core (se necessário)
 # Ubuntu/Debian: sudo apt install bats
 # Fedora:        sudo dnf install bats
-# macOS:         brew install bats-core
+# Manual:        ver https://github.com/bats-core/bats-core
 
 bats tests/run_tests.bats
 ```

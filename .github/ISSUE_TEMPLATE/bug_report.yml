@@ -76,7 +76,6 @@ body:
         - Linux (Fedora/RHEL/CentOS)
         - Linux (Arch)
         - Linux (outra distro)
-        - macOS
         - Outro
     validations:
       required: true
@@ -85,7 +84,7 @@ body:
     id: so_versao
     attributes:
       label: Versão do sistema operacional
-      placeholder: "Ubuntu 24.04 / Fedora 43 / macOS 15.3"
+      placeholder: "Ubuntu 24.04 / Fedora 43 / Arch Linux"
 
   - type: textarea
     id: contexto

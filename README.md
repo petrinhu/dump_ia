@@ -5,7 +5,7 @@
 [![Versão](https://img.shields.io/badge/versão-2.0.0-blue?style=flat-square)](CHANGELOG.md)
 [![Licença](https://img.shields.io/badge/licença-MIT-green?style=flat-square)](LICENSE)
 [![Bash](https://img.shields.io/badge/bash-4.4%2B-lightgrey?style=flat-square&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
-[![Plataforma](https://img.shields.io/badge/plataforma-linux%20|%20macos-lightgrey?style=flat-square)](https://github.com/petrinhu/dump_ia)
+[![Plataforma](https://img.shields.io/badge/plataforma-linux-lightgrey?style=flat-square&logo=linux&logoColor=white)](https://github.com/petrinhu/dump_ia)
 [![PRs bem-vindos](https://img.shields.io/badge/PRs-bem--vindos-brightgreen?style=flat-square)](CONTRIBUTING.md)
 
 ---
@@ -22,12 +22,13 @@ suficiente para manter o histórico completo do desenvolvimento.
 ## Como funciona
 
 ```
-seu projeto/          dump_ia.sh           dump_ia_23022026_143012.log
-├── src/          ──────────────►   ┌─ cabeçalho + opções utilizadas
-├── tests/                          ├─ árvore de diretórios
-├── README.md                       ├─ conteúdo de todos os arquivos
-└── ...                             └─ instruções para a IA retomar
-                                   dump_ia_23022026_143012.sha256
+seu projeto/          dump_ia.sh           saída/
+├── src/          ──────────────►   ├── dump_ia_ddmmyyyy_hhmmss.log
+├── tests/                          │   ├─ cabeçalho + opções utilizadas
+├── README.md                       │   ├─ árvore de diretórios
+└── ...                             │   ├─ conteúdo de todos os arquivos
+                                    │   └─ instruções para a IA retomar
+                                    └── dump_ia_ddmmyyyy_hhmmss.sha256
 ```
 
 Envie o `.log` para a IA. Ela lê, entende o projeto inteiro e continua

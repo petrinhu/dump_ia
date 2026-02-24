@@ -247,7 +247,7 @@ if command -v tree &>/dev/null; then
     TREE_DISPONIVEL=true
 else
     aviso "'tree' não instalado. Usando 'find' como alternativa."
-    aviso "Para instalar: apt install tree  /  dnf install tree  /  brew install tree"
+    aviso "Para instalar: apt install tree  /  dnf install tree"
 fi
 
 ICONV_DISPONIVEL=false
