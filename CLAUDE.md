@@ -72,3 +72,26 @@ Usa **bats-core**. Suite em `tests/run_tests.bats`. Antes de qualquer PR, todos 
 ```bash
 bats tests/run_tests.bats
 ```
+
+## Estado atual
+
+**Versão:** 2.0.0 — estável, commitada e publicada no GitHub.
+
+**Concluído nesta fase:**
+- `dump_ia.sh` v2.0.0 completo com todas as funcionalidades
+- Suite de testes bats (`tests/run_tests.bats`, 28 testes)
+- Documentação GitHub completa: README, CONTRIBUTING, CHANGELOG, SECURITY,
+  CODE_OF_CONDUCT, AGENTS, CLAUDE, LICENSE MIT bilíngue
+- Templates de issue (YAML moderno) e pull request
+- Repositório publicado: `git@github.com:petrinhu/dump_ia.git`
+
+**Pendente (roadmap):**
+- Pacote RPM para distribuição em sistemas Red Hat/Fedora
+- Suporte a `.gitignore` como filtro automático de exclusão
+- Modo interativo para seleção de arquivos
+- Integração com APIs de IA (envio direto do dump)
+
+**Decisões abertas:**
+- Nenhuma no momento.
+
+**Próxima sessão:** atualizar esta seção com o que for iniciado.
