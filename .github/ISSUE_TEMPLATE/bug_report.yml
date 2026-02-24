@@ -1,0 +1,96 @@
+name: Relato de bug
+description: Encontrou um comportamento inesperado? Nos ajude a corrigir.
+title: "[bug] "
+labels: ["bug", "precisa-de-triagem"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado por dedicar tempo para relatar este bug.
+        Preencha todos os campos para que possamos reproduzir e corrigir o problema rapidamente.
+
+  - type: textarea
+    id: descricao
+    attributes:
+      label: Descrição do problema
+      description: Descreva claramente o que acontece de errado.
+      placeholder: Ao rodar o script com --pasta, o dump gerado não inclui arquivos .go...
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Passos para reproduzir
+      description: Passos exatos para reproduzir o comportamento.
+      placeholder: |
+        1. Execute `./dump_ia.sh --pasta ~/meu-projeto --verbose`
+        2. Observe que arquivos .go não aparecem no dump
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: esperado
+    attributes:
+      label: Comportamento esperado
+      description: O que deveria ter acontecido?
+    validations:
+      required: true
+
+  - type: textarea
+    id: atual
+    attributes:
+      label: Comportamento atual
+      description: O que aconteceu de fato? Cole a saída completa do terminal.
+      render: shell
+    validations:
+      required: true
+
+  - type: input
+    id: versao
+    attributes:
+      label: Versão do dump_ia
+      description: Execute `grep ^VERSAO dump_ia.sh` para obter a versão.
+      placeholder: "2.0.0"
+    validations:
+      required: true
+
+  - type: input
+    id: bash
+    attributes:
+      label: Versão do bash
+      description: Execute `bash --version` e cole a primeira linha.
+      placeholder: "GNU bash, versão 5.2.21(1)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: sistema
+    attributes:
+      label: Sistema operacional
+      options:
+        - Linux (Debian/Ubuntu)
+        - Linux (Fedora/RHEL/CentOS)
+        - Linux (Arch)
+        - Linux (outra distro)
+        - macOS
+        - Outro
+    validations:
+      required: true
+
+  - type: input
+    id: so_versao
+    attributes:
+      label: Versão do sistema operacional
+      placeholder: "Ubuntu 24.04 / Fedora 43 / macOS 15.3"
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: |
+        Logs, capturas de tela, trechos do dump gerado ou qualquer
+        informação que possa ajudar na investigação.

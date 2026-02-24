@@ -1,0 +1,69 @@
+name: Sugestão de funcionalidade
+description: Tem uma ideia para melhorar o dump_ia? Compartilhe.
+title: "[feat] "
+labels: ["melhoria", "precisa-de-triagem"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Obrigado pela sugestão! Descreva o problema que a funcionalidade resolve,
+        não apenas a solução — isso nos ajuda a encontrar a melhor implementação.
+
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema esta funcionalidade resolve?
+      description: |
+        Descreva a situação ou limitação que te levou a sugerir isso.
+        Ex: "Quando trabalho com projetos monorepo, o dump fica grande demais porque..."
+      placeholder: Quando eu uso o dump_ia em projetos com múltiplos subprojetos...
+    validations:
+      required: true
+
+  - type: textarea
+    id: solucao
+    attributes:
+      label: Solução que você imagina
+      description: Descreva como você gostaria que funcionasse.
+      placeholder: |
+        Uma opção --profundidade que limitasse a busca de arquivos a N níveis
+        de diretório a partir da pasta raiz...
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas que você considerou
+      description: Existe alguma forma de contornar o problema atualmente?
+
+  - type: dropdown
+    id: impacto
+    attributes:
+      label: Impacto estimado
+      description: Quantos usuários você acredita que se beneficiariam disso?
+      options:
+        - Apenas meu caso de uso específico
+        - Alguns usuários com projetos similares
+        - A maioria dos usuários
+        - Todos os usuários
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: contribuicao
+    attributes:
+      label: Contribuição
+      options:
+        - label: Estou disposto a implementar esta funcionalidade e abrir um PR
+        - label: Posso ajudar com testes
+
+  - type: textarea
+    id: contexto
+    attributes:
+      label: Contexto adicional
+      description: |
+        Links, referências, exemplos de outros projetos ou qualquer
+        informação que ajude a entender a sugestão.
